@@ -5,32 +5,24 @@
     <title>General Assembly Coding Challenge</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <script src="script.js"></script>
-    <style>
-      #favoritesButton {
-        margin-top: 5px;
-      }
-    </style>
+  
   </head>
   <body>
     <div class="section">
-      <div class="container has-text-centered">
-        <div class="columns is-centered">
-          <div class="column is-half">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
 
-            <h1 class="title is-1">OMDB API Movie Search</h1>
+            <h1 class="title">OMDB API Movie Search</h1>
             <form onsubmit="event.preventDefault(); submitMovieSearch();">
               <div class="field has-addons">
-                <div class="control is-expanded">
                   <input id="movieSearchText" class="input" type="text" placeholder="Movie Title">
-                </div>
                 <div class="control">
-                  <button class="button is-primary">Search</button>
+                  <button class="button">Search</button>
                 </div>
               </div>
             </form>
-
-            <button id="favoritesButton" class="button" onclick="showFavorites()"><i class="fa fa-star-o"></i> Favorites</button>
-
+            <button id="favoritesButton" class="button" onclick="showFavorites()">Favorites</button>
           </div>
         </div>
       </div>
@@ -46,7 +38,7 @@
       <div id="movieDetails" class="modal-content">
 
       </div>
-      <button onclick="hideDetailsModal()" class="modal-close is-large"></button>
+      <button onclick="hideDetailsModal()"></button>
     </div>
   </body>
 </html>
